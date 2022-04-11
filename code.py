@@ -10,7 +10,7 @@ df = df.astype(str).apply(lambda x: x.str.lower())
 
 #filter bad data
 filtered=df.replace({'phatom': 'phantom', '2.0': 'NaN', '1.0': 'NaN', 'professional': 'pro'}, regex=True)
-
-#count all variables
-count_drones=df.stack().value_counts()
-print(count_drones)
+print(filtered)
+# #count all variables
+# count_drones=df.stack().value_counts()
+# print(count_drones)
